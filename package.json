@@ -1,6 +1,6 @@
 {
-  "name": "client",
-  "version": "0.1.1",
+  "name": "chuck-norris",
+  "version": "0.0.1",
   "description": "Chuck Norris Random Joke",
   "main": "index.js",
   "private": true,

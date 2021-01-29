@@ -40,4 +40,4 @@ A step by step guide on how to test this repo/project
 - Styled components
 
 ### Evidence
-![Chuck Norris View All Jokes Categories]()
+![Chuck Norris View All Jokes Categories](./assets/images/all_categories.png)
