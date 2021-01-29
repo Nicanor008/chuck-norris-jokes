@@ -1,0 +1,71 @@
+{
+  "name": "client",
+  "version": "0.1.1",
+  "description": "Chuck Norris Random Joke",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicanor008/"
+  },
+  "keywords": [
+    "nodejs",
+    "graphql",
+    "apollo graphql",
+    "apollo graphql client",
+    "MERN-Graphql",
+    "application"
+  ],
+  "author": "Nicanor008",
+  "homepage": "https://github.com/Nicanor008/",
+  "scripts": {
+    "client:dev": "parcel client/index.html",
+    "client:build": "parcel build client/index.html -d ./dist-client",
+    "server:dev": "ts-node server/src/index.ts",
+    "server:start": "node server/src/index.ts",
+    "start": "concurrently --kill-others \"npm run server:dev\" \"npm run client:dev\""
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.7",
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-datasource-rest": "^0.9.3",
+    "apollo-link-http": "^1.5.16",
+    "apollo-server": "^2.15.1",
+    "concurrently": "^5.3.0",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.10.4",
+    "parcel": "^1.12.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "styled-components": "^5.2.1",
+    "ts-node": "^9.1.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.3",
+    "parcel-bundler": "^1.12.4",
+    "nodemon": "^2.0.4",
+    "typescript": "^4.1.3"
+  }
+}

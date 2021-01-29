@@ -1,0 +1,35 @@
+.loaderWrapper {
+    width: 100%;
+    height: 100%;
+    padding: 10% 0;
+}
+.loader {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    border-top: 6px solid rgb(255, 0, 200);
+    border-right: 6px solid green;
+    border-left: 6px solid pink;
+}
+
+/* Safari browser */
+/* animate */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
